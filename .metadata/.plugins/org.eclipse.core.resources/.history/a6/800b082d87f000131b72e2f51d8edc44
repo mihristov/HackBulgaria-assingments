@@ -1,0 +1,30 @@
+import static org.junit.Assert.*;
+
+import java.util.HashMap;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class HashMapTestCase {
+
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void standartTest() {
+        HashMap<Character, Integer> input = new HashMap<>();
+        input.put('a', 1);
+        input.put('b', 2);
+        input.put('c', 3);
+        
+        AssertEquals("{ a:1, b:2, c:3 }", )
+    }
+
+}

@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapUtilClass {
+    
+    public String HashMapUtilMethod(HashMap<? extends Object, ? extends Object> map) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ ");
+        String prefix = "";
+        for (Map.Entry<?, ?> entry : map.entrySet()){
+            sb.append(String.format("%s:%s%s ", entry.getKey().toString(), entry.getValue().toString(),prefix));
+            prefix = ",";
+        }
+        sb.append(" }");
+        return sb.toString();
+    }
+}

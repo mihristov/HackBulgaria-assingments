@@ -1,0 +1,12 @@
+import java.util.Collection;
+
+public class Reverse {
+    public Reverse() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    public <T> T reverseCollection(Collection<T> col){
+        
+    }
+
+}

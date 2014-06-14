@@ -1,0 +1,5 @@
+public class HashMapUtilClass {
+    public String HashMapUtilMethod(HashMap<? extends Object, ? extends Object>){
+        return "";
+    }
+}

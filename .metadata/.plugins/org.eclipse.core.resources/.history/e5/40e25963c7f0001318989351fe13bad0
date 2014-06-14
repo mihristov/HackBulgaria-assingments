@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class StudentsUtil {
+    public void sortStudents(List<Student> people){
+        for(Student st : people){
+            for(Student st1 : people){
+                if (st.compareTo(st1) > 0){
+                    Student temp = st1;
+                    st1 = st;
+                    st = temp;
+                }
+            }
+        }
+    }
+}

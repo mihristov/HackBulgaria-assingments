@@ -1,0 +1,35 @@
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class StudentGradesTestCase {
+    StudentsUtil su;
+    @Before
+    public void setUp() throws Exception {
+        su = new StudentsUtil();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void standartTest() {
+        Student st2 = new Student("Petyo", 5);
+        Student st1 = new Student("Milen", 6);
+        Student st3 = new Student("Stefan", 3);
+        Student st4 = new Student("Paco", 4);
+        
+        ArrayList<Student> students= new ArrayList<>(Arrays.asList(st2, st1, st3, st4));
+        su.sortStudents(students);
+        
+        
+    }
+
+}

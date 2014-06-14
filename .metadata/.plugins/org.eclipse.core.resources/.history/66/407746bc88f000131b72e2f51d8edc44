@@ -1,0 +1,8 @@
+import java.util.HashMap;
+
+public class HashMapUtilClass {
+    
+    public String HashMapUtilMethod(HashMap<? extends Object, ? extends Object> map) {
+        return "";
+    }
+}

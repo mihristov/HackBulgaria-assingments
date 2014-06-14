@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class RotateElements {
+    public void rotate(ArrayList<Integer> collection, int rotateStep){
+        
+    }
+}

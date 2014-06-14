@@ -1,0 +1,29 @@
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BoundedQueue<T> extends LinkedList<T>{
+
+    public static void main(String[] args) {
+        BoundedQueue<Integer> boundedQueue = new BoundedQueue<>(3);
+        boundedQueue.offer(1);
+        boundedQueue.offer(2);
+        boundedQueue.offer(3);
+        boundedQueue.offer(4);
+        boundedQueue.offer(5);
+        System.out.println(boundedQueue.toString());
+    }
+
+    private T[] queueArray;
+    private int topIndex;
+    private int arraySize;
+
+    public BoundedQueue(int size) {
+        this.queueArray = (T[]) new Object[size];
+        this.topIndex = 0;
+        this.arraySize = size;
+    }
+
+    
+}

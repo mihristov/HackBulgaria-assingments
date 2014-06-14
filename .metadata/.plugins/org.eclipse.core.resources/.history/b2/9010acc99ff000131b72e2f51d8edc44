@@ -1,0 +1,7 @@
+import java.util.Collection;
+
+public class FirstUnique {
+    public Integer getFirstDuplicate(Collection<Integer> ints){
+        return 5;
+    }
+}

@@ -1,0 +1,25 @@
+import java.util.Date;
+
+public class Time {
+    public static Date d = new Date();
+    private int hours;
+    private int mins;
+    private int secs;
+    private int day;
+    private int month;
+    private int year;
+    
+    public static void main(String[] args) {
+        System.out.println(d);
+    }
+    public Time(int hours, int mins, int secs, int day, int month, int year) {
+        this.hours = hours;
+        this.mins = mins;
+        this.secs = secs;
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    
+}

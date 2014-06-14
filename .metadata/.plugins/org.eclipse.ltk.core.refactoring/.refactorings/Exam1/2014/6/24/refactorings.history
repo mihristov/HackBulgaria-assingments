@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;SortUtilClass.listSort(...)&apos; to &apos;sort&apos;&#x0A;- Original project: &apos;Exam1&apos;&#x0A;- Original element: &apos;SortUtilClass.listSort(...)&apos;&#x0A;- Renamed element: &apos;SortUtilClass.sort(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;listSort&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/1. SortUtilClass&lt;{SortUtilClass.java[SortUtilClass~listSort~QList\&lt;QInteger;&gt;;" name="sort" references="true" stamp="1402742874735" version="1.0"/>
+</session>

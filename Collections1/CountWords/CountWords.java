@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class CountWords {
+    public HashMap<String, Integer> countWordsMethod(String text) {
+        LinkedHashMap<String, Integer> result = new LinkedHashMap<String, Integer>();
+        String[] words = text.split(" ");
+        for (String word : words) {
+            if (result.get(word) != null) {
+                result.put(word, result.get(word) + 1);
+            } else {
+                result.put(word, 1);
+            }
+        }
+        return result;
+    }
+}

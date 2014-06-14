@@ -1,0 +1,55 @@
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class DateLogger extends Logger {
+
+    public DateLogger() {
+        this.level = 3;
+    }
+
+    public DateLogger(int level) {
+        if (level < 1) {
+            throw new NumberFormatException("Integer out of range (<1)!");
+        }
+        this.level = level;
+    }
+
+    @Override
+    public void log(int level, String message) {
+        if (level < 1) {
+            throw new NumberFormatException("Integer out of range (<1)!");
+        }
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        Calendar d = Calendar.getInstance();
+
+
+       /* if (level <= this.level) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(String.format("|%02d:%02d:%02d %02d.%02d.%04d| ", d.getHours(), d.getMinutes(), d.getSeconds(),
+                    d.getDay(), d.getMonth() + 1, d.getYear() + 1900));
+
+            sb.append(String.format("%d => %s", level, message));
+            System.out.println(sb.toString());
+        }*/
+
+    }
+    
+    @Override
+    public void log(String message) {
+        int defaultLevel = 3;
+        
+        Date d = new Date();
+
+        if (defaultLevel <= this.level) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(String.format("|%02d:%02d:%02d %02d.%02d.%04d| ", d.getHours(), d.getMinutes(), d.getSeconds(),
+                    d.getDay(), d.getMonth() + 1, d.getYear() + 1900));
+
+            sb.append(String.format("%d => %s", level, message));
+            System.out.println(sb.toString());
+        }
+    }
+}

@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class OnOffCollection<T> extends ArrayList<T>{
+    
+    @Override
+    public boolean add(T obj){
+        return true;
+    }
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+    
+}

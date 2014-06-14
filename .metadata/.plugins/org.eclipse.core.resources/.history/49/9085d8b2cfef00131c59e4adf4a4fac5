@@ -1,0 +1,192 @@
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Queue;
+
+public class BoundedQueue<T> implements Queue<T> {
+
+    public static void main(String[] args) {
+        BoundedQueue<Integer> boundedQueue = new BoundedQueue<>(3);
+        boundedQueue.offer(1);
+        boundedQueue.offer(2);
+        boundedQueue.offer(3);
+        boundedQueue.offer(4);
+        boundedQueue.offer(5);
+        System.out.println(boundedQueue.toString());
+    }
+    private T[] queueArray;
+    private int topIndex;
+    private int arraySize;
+
+    public BoundedQueue(int size) {
+        this.queueArray = (T[]) new Object[size];
+        this.topIndex = 0;
+        this.arraySize = size;
+    }
+
+    @Override
+    public int size() {
+        return this.arraySize;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        for (int i = 0; i < arraySize; i++) {
+            if (queueArray[i] != null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public boolean contains(Object o) {
+        for (int i = 0; i < arraySize; i++) {
+            if (queueArray[i].equals(o)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Object[] toArray() {
+        return null;
+    }
+
+    @Override
+    public <K> K[] toArray(K[] a) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public boolean remove(Object o) {
+        for (int i = 0; i < arraySize; i++) {
+            if (queueArray[i].equals(o)) {
+                queueArray[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean containsAll(Collection<?> c) {
+        for (int i = 0; i < arraySize; i++) {
+            boolean isFound = false;
+            for (Object item : c) {
+                if (queueArray[i].equals(item)) {
+                    isFound = true;
+                }
+            }
+            if (isFound == false) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public boolean addAll(Collection<? extends T> c) {
+
+        return false;
+    }
+
+    @Override
+    public boolean removeAll(Collection<?> c) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public boolean retainAll(Collection<?> c) {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public void clear() {
+        for (int i = 0; i < arraySize; i++){
+            queueArray[i] = null;
+        }
+
+    }
+
+    @Override
+    public boolean add(T e) {
+        if (e == null) {
+            new NullPointerException();
+            return false;
+        }
+        int index = topIndex++ % arraySize;
+        queueArray[index] = e;
+        return true;
+    }
+
+    @Override
+    public boolean offer(T e) {
+        if (e == null) {
+            new NullPointerException();
+            return false;
+        }
+        int index = topIndex++ % arraySize;
+        queueArray[index] = e;
+        return true;
+    }
+
+    @Override
+    public T remove() {
+        int index = --topIndex % arraySize;
+        if (queueArray[index] != null) {
+            T result = queueArray[index];
+            queueArray[index] = null;
+            return result;
+        }
+        return null;
+    }
+
+    @Override
+    public T poll() {
+        int index = --topIndex % arraySize;
+        if (queueArray[index] != null) {
+            T result = queueArray[index];
+            queueArray[index] = null;
+            return result;
+        }
+        return null;
+    }
+
+    @Override
+    public T element() {
+        return queueArray[topIndex - 1 % arraySize];
+    }
+
+    @Override
+    public T peek() {
+        return queueArray[topIndex - 1 % arraySize];
+    }
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        return super.equals(obj);
+    }
+    @Override
+    public int hashCode() {
+        // TODO Auto-generated method stub
+        return super.hashCode();
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < topIndex; i++){
+            sb.append(String.format("%s, ", queueArray[i]));
+        }
+        return sb.toString();
+    }
+}

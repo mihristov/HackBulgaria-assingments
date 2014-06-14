@@ -1,0 +1,13 @@
+public class DateLogger extends Logger{
+    
+    public DateLogger() {
+        this.level = 3;
+    }
+    
+    public DateLogger(int level) {
+        if (level < 1) {
+            throw new NumberFormatException("Integer out of range (<1)!");
+        }
+        this.level = level;
+    }
+}

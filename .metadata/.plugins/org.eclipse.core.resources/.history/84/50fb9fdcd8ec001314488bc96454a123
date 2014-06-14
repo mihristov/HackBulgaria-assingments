@@ -1,0 +1,10 @@
+import java.util.Date;
+
+public class Time {
+    public static Date d = new Date();
+    public static void main(String[] args) {
+        System.out.println(d.toString());
+    }
+    
+
+}

@@ -1,0 +1,37 @@
+import java.util.Date;
+
+public class Time {
+    
+    private int hours;
+    private int mins;
+    private int secs;
+    private int day;
+    private int month;
+    private int year;
+    
+    public static void main(String[] args) {
+        Time.now();
+    }
+    public Time(int hours, int mins, int secs, int day, int month, int year) {
+        this.hours = hours;
+        this.mins = mins;
+        this.secs = secs;
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    public static String now(){
+        Date d = new Date();
+        Time timeNow = new Time(d.getHours(), d.getMinutes(), d.getSeconds(),
+                d.getDay(), d.getMonth(), d.getYear());
+        return timeNow.toString();
+    }
+    
+    @Override
+    public String toString(){
+        return String.format("%d02:%d02:%d02:%d02:%d02:%d04", this.hours, this.mins,
+                this.secs, this.day, this.month, this.year);
+    }
+    
+}

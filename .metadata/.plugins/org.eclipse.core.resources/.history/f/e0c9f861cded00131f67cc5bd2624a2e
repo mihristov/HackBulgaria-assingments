@@ -1,0 +1,13 @@
+public class InvariantStack extends StackImpl {
+    @Override
+    public void push(Object obj) {
+        if (topIndex == arraySize - 1) {
+            arraySize *= 2;
+            Object[] newStack = new Object[arraySize];
+            System.arraycopy(stackArray, 0, newStack, 0, arraySize / 2 - 1);
+            stackArray = newStack;
+        }
+        topIndex++;
+        stackArray[topIndex] = obj;
+    }
+}

@@ -1,0 +1,33 @@
+import java.util.Date;
+
+public class DateLogger extends Logger {
+
+    public DateLogger() {
+        this.level = 3;
+    }
+
+    public DateLogger(int level) {
+        if (level < 1) {
+            throw new NumberFormatException("Integer out of range (<1)!");
+        }
+        this.level = level;
+    }
+
+    @Override
+    public void log(int level, String message) {
+        if (level < 1) {
+            throw new NumberFormatException("Integer out of range (<1)!");
+        }
+
+        Date d = new Date();
+
+        if (level <= this.level) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(String.format("%02d:%02d:%02d %02d:%02d:%04d", 
+                    d.getHours(), d.getMinutes(), d.getSeconds(),
+                    d.getDay(), d.getMonth(), d.getYear() + 1900));
+            
+            System.out.println(String.format("%d => %s", level, message));
+        }
+    }
+}

@@ -1,0 +1,13 @@
+import java.util.Stack;
+
+public class Brackets {
+    public Stack<Character> myStack;
+
+    public Brackets() {
+
+    }
+
+    public boolean isCorrect(String input) {
+        return true;
+    }
+}

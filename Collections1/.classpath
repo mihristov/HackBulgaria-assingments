@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Brackets"/>
+	<classpathentry kind="src" path="tests"/>
+	<classpathentry kind="src" path="Reverse"/>
+	<classpathentry kind="src" path="On/Off Collection"/>
+	<classpathentry kind="src" path="BoundedQueue"/>
+	<classpathentry kind="src" path="10. HashMap_convert"/>
+	<classpathentry kind="src" path="CountWords"/>
+	<classpathentry kind="src" path="RotateElements"/>
+	<classpathentry kind="src" path="Duplicate"/>
+	<classpathentry kind="src" path="StudentGrades"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,7 @@
+import java.util.LinkedHashMap;
+
+public class CountWords {
+    public LinkedHashMap<String, Integer> countWordsMethod(String text){
+        return null;
+    }
+}

@@ -1,0 +1,197 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "987c9291f7b865fba5142013541f4c2d3bf6f26b",
+    "jarFileModificationDate": "2014-05-22T16:32:15+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ccbfc258eb2bfcf79b48ace0c0617fbbac2a2a3e",
+    "jarFileModificationDate": "2014-05-22T16:32:15+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5ac021500e775d96daf62d87e5fc023ca0807c49",
+    "jarFileModificationDate": "2014-05-22T16:26:34+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a9bbf554dee458a0d8dd1d4d4b395602046ff02e",
+    "jarFileModificationDate": "2014-05-22T16:25:03+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f112df11e4a80e7c0414e0a7d539c184dda8c504",
+    "jarFileModificationDate": "2014-05-22T16:32:51+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/pulse-java.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4e031bb61df09069aeb2bffb4019e7a5034a4ee0",
+    "jarFileModificationDate": "2013-05-17T19:05:12+03:00",
+    "location": "/home/mihristov/Downloads/eclipse/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9b4a4bcc9f7f3eb8cd9dce7dd36b445b899a3820",
+    "jarFileModificationDate": "2014-05-22T16:27:06+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "01741a1846d2bd0b01535c256c1036c9eb20799e",
+    "jarFileModificationDate": "2014-05-22T16:32:15+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "75afe0027d304e9a6d824edbf0ff18deb495b337",
+    "jarFileModificationDate": "2014-05-22T16:24:47+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f22b56f7f18e747c7f5b95772a7dbdbcfbda60ac",
+    "jarFileModificationDate": "2014-05-22T16:25:06+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1e086e8a0b9c257bd17617cfbdf606f9c9510281",
+    "jarFileModificationDate": "2014-05-22T16:32:15+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/rhino.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b1b6ea3b7e4aa4f492509a4952029cd8e48019ad",
+    "jarFileModificationDate": "2014-05-31T12:41:13+03:00",
+    "location": "/home/mihristov/workspace/week2/libs/commons-io-2.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d48d5c42a7c92804e6d0f3a55c8fcade130ba9ab",
+    "jarFileModificationDate": "2014-05-22T16:24:54+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "91bc344b583c26c6f8a4f49a616074b89348e714",
+    "jarFileModificationDate": "2014-05-22T16:24:35+03:00",
+    "location": "/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.60-2.4.7.4.fc20.i386/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": "v201303031735"
+    },
+    "jarFileFingerprint": "5ed9fe32ab1d2b18bec7cac0a044090100f327ba",
+    "jarFileModificationDate": "2014-02-24T12:58:53+02:00",
+    "location": "/home/mihristov/Downloads/eclipse/eclipse/plugins/org.hamcrest.core_1.3.0.v201303031735.jar",
+    "javaRuntime": false
+  }
+]

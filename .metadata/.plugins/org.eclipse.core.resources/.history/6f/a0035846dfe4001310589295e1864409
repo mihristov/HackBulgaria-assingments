@@ -1,0 +1,20 @@
+
+public class HelloWorld {
+    
+    public static void main(String[] args) {
+        System.out.println(isPrime(3));
+    }
+
+    public static boolean isOdd(int n){
+        return n % 2 == 1;
+    }
+
+    public static boolean isPrime(int N){
+        for (int i = 2; i < N; i++) {
+            if (N % i == 0 && i != N){
+                return false;
+            }
+        }
+        return true;
+    }
+}

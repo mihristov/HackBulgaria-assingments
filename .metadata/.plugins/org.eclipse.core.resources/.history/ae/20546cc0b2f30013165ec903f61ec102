@@ -1,0 +1,13 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class MonotonousUtilClass {
+    public boolean isMonotonous(List<Integer> myList) {
+        return SortUtilClass.sort(myList).equals(myList) || SortUtilClass.sort(ReverseUtilClass.reverse(myList)).equals(myList);
+    }
+    
+    public static void main(String[] args) {
+        MonotonousUtilClass asd = new MonotonousUtilClass();
+        asd.isMonotonous(Arrays.asList(1,2,3,4,5,6));
+    }
+}
