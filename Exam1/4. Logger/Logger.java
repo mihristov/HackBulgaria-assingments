@@ -36,8 +36,4 @@ public class Logger {
         this.level = newLevel;
     }
 
-    public static void main(String[] args) {
-        Logger logger = new DateLogger();
-        logger.log("My message");
-    }
 }

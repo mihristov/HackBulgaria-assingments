@@ -5,14 +5,11 @@ import java.util.Calendar;
 public class DateLogger extends Logger {
 
     public DateLogger() {
-        this.level = 3;
+        super();
     }
 
     public DateLogger(int level) {
-        if (level < 1) {
-            throw new NumberFormatException("Integer out of range (<1)!");
-        }
-        this.level = level;
+        super(level);
     }
 
     @Override
