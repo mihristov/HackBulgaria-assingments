@@ -12,13 +12,6 @@ public class Logger {
         this.level = level;
     }
 
-    public void log(String message) {
-        int defaultLevel = 3;
-        if (defaultLevel <= this.level) {
-            System.out.println(String.format("%d => %s", defaultLevel, message));
-        }
-    }
-
     public void log(int level, String message) {
         if (level < 1) {
             throw new NumberFormatException("Integer out of range (<1)!");
@@ -26,6 +19,13 @@ public class Logger {
 
         if (level <= this.level) {
             System.out.println(String.format("%d => %s", level, message));
+        }
+    }
+
+    public void log(String message) {
+        final int defaultLevel = 3;
+        if (defaultLevel <= this.level) {
+            System.out.println(String.format("%d => %s", defaultLevel, message));
         }
     }
 
